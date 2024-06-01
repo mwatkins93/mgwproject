@@ -9,8 +9,8 @@ body {
 /* Header Styles */
 header {
   background-colour: #000000;
-  color: #000000;
-  height: 100px;
+  color: #ffffff;
+  padding: 10px 0;
   width: 100%;
 }
 
