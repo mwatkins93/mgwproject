@@ -9,8 +9,8 @@ body {
 /* Header Styles */
 header {
     background-color: #000; /* Black background */
-    color: #fff; /* White text */
     padding: 10px 0;
+    height: 100px;
 }
 
 header .container {
@@ -37,7 +37,8 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 20px
+    display: inline;
 }
 
 header nav ul li a {
