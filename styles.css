@@ -1,15 +1,11 @@
 /* General Styles */
 body {
   font-family: Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-colour: #000000;
+  background-colour: #f3f3f3;
 }
 
 /* Header Styles */
 header {
-  background-colour: #000000;
-  color: #000000;
-  padding: 10px 0;
-  width: 100%;
+  background-colour: red;
+  height: 100px;
 }
