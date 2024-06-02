@@ -30,19 +30,29 @@ header {
 .nav {
     display: inline-block;
     vertical-align: middle;
-    width: 95%;
+    width: 100%;
+    background-color: grey;
     text-align: center;
 }
 
-.menu ul li{
+.menu ul {
     display: inline-block;
-    font-size: 1%;
+    background-color: blueviolet;
+    padding: 0 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
     vertical-align: middle;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .menu ul li a{
     color: gainsboro;
-    font-size:12px;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
 }
