@@ -31,13 +31,12 @@ header {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    background-color: grey;
+    background-color: #000;
     text-align: center;
 }
 
 .menu ul {
     display: inline-block;
-    background-color: blueviolet;
     padding: 0 0;
     text-align: center;
 }
