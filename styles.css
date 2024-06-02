@@ -38,8 +38,8 @@ header {
     display: inline-block;
     font-size: 1%;
     vertical-align: middle;
+    padding-left: 40px;
     padding-right: 40px;
-    ;
 }
 
 .menu ul li a{
