@@ -1,0 +1,499 @@
+/* A. Universal Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: url('/fonts/visby.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "visby.otf", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4%;
+}
+
+/* B. Nav bar */
+.navbar {
+    background-color: #000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+
+}
+
+.navbar ul li a {
+    color: rgb(220, 220, 220);
+    padding: 20px 30px;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+/* Hamburger button */
+a,button{
+    cursor: pointer;
+}
+
+.ham-nav{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 250px;
+}
+
+.ham-nav{
+    position: fixed;
+    right: -500px;
+    width: 225px;
+    height: 100%;
+    background-color: #000;
+    transition: .5s;
+}
+
+.ham-nav ul li{
+    color: rgb(220, 220, 220);
+    text-align: right;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-bottom: 1pt solid #252525;
+}
+
+.hamburger, .bar{
+    position: fixed;
+}
+
+.hamburger{
+    left: 95%;
+    height: 60px;
+    width: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar{
+    top: 3px;
+    background: rgb(220, 220, 220);
+    width: 100%;
+    height: 2px;
+    transition: all .3s ease-in;
+}
+
+#bar2{
+    top: 11px;
+}
+
+#bar3{
+    top: 19px;
+}
+
+.ham-nav.active{
+    right: 0;
+}
+
+.hamburger.open #bar1{
+    background-color: #fff;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+    background-color: transparent;
+}
+
+.hamburger.open #bar3{
+    background-color: #fff;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+/* C. Hero section */
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container-max {
+    background: url(/images/dark_dunes.jpg) no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+    /* border: 10px solid salmon; */
+    padding: 50px 50px;
+}
+
+
+.hero .container-sm {
+    display: flex;
+}
+
+.hero-img-container {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    /* border: 10px solid salmon; */
+}
+
+.hero-text-container {
+    flex: 1;
+    padding: 20px 0 20px 40px;
+    /* border: 10px solid salmon; */
+}
+
+.hero-heading {
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(220, 220, 220);
+}
+
+.hero-text {
+    color: rgb(220, 220, 220);
+    line-height: 2;
+}
+
+.hero-pic {
+    position: relative;
+    border: 2px solid rgb(220, 220, 220);
+    max-height: 350px;
+    width: 250px;
+    size: fluid;
+}
+
+/* D. Video section */
+.video-bg-white .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    align-items: center;
+    /* border: 10px solid salmon; */
+}
+
+.video-content-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.video-content-1 {
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.video-1 {
+    margin-bottom: 20px;
+}
+
+.video-content-2 {
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+    /* border: 10px solid salmon; */
+}
+
+.video-2 {
+    margin-bottom: 20px;
+}
+
+/* E. Testimonial section */
+.testimonials .container {
+    padding-bottom: 100px;
+}
+
+.testimonials-heading {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px
+}
+/* Grabs the last two paragraphs in the testimonial cards, gives them a top margin and bold */
+.testimonials .cards p:nth-child(2) {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* W. Footer  */
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    background-color: #000;
+}
+
+.footer-text {
+    display: flex;
+    color: rgb(220, 220, 220);
+    margin: 0 0 27px 0;
+    /* border: 10px solid salmon; */
+}
+
+.footer-icons {
+    display: flex;
+    scale: 1.3;
+    margin: 25px 0 10px 0; */
+    /* border: 10px solid salmon; */
+}
+
+.footer-icons ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 10px solid salmon */
+}
+
+.footer-icons ul li a {
+    color: rgb(220, 220, 220);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.footer-icons ul li a:hover {
+    color: #fff;
+}
+
+/* X. Utility classes (container, etc.) */
+
+/* Background classes */
+.bg-black {
+    background: black;
+    color: #fff;
+}
+
+.bg-white {
+    background: #fff;
+    color: black;
+}
+
+.container-max {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+/* Button classes */
+
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: #000;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Card classes */
+
+.cards {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Text classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px, 0, 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: 5px, 0, 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px, 0, 20px;
+}
+
+.text-med {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px, 0, 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px, 0, 5px;
+}
+
+
+
+/* Y. Defined variables */
+:root {
+    --primary-colour: #d1f0ff;
+}
+
+/* Media queries */
+@media (max-width: 960px) {
+    .text-xl {
+        font-size: 1.8rem;
+    }
+    .text-xxl {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 750px) {
+
+    /* Nav bar */
+    .navbar .main-menu {
+        display: none;
+    }
+    .navbar .container {
+        border: 10px solid salmon;
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        left: 0px;
+        width: 75px;
+        height: 75px;
+        border: 10px solid salmon;
+    }
+    .ham-nav {
+        display: none;
+    }
+
+    /* Hero */
+    .hero .container-sm {
+        display: flex;
+        flex-direction: column;
+        /* border: 10px solid salmon; */
+        align-items: center;
+    }
+    .hero-text-container {
+        padding: 0;
+    }
+    .hero-heading {
+        /* border: 10px solid salmon; */
+        text-align: center;
+    }
+    .hero-text {
+        /* border: 10px solid salmon; */
+        text-align: center;
+    }
+    .hero-pic {
+        /* border: 10px solid salmon; */
+        margin-bottom: 20px;
+    }
+
+    /* Online */
+    .video-content-heading {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .video-bg-white .container {
+        display: flex;
+        flex-direction: column;
+        border: 10px solid salmon;
+    }
+    .video-content-1 {
+        border: 10px solid salmon;
+        margin: 0;
+    }
+    .video-content-1 iframe {
+        width: 125%;
+    }
+
+    .video-content-2 {
+        margin: 0;
+    }
+    .video-bg-white .container iframe {
+        width: 125%;
+    }
+
+}
+
+/* @media (max-width: 500px) */
+
+/* Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    transition: right 0.3s ease-in-out;
+}

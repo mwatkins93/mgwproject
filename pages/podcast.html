@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title> My Website </title>
+  <link rel = "stylesheet" type = "text/css" href = "/styles.css">
+  <style>
+    body {
+        background-image: url("/images/mgw_logo_orig.png");
+        background-position: center center;
+        background-size: contain;
+        height: 850px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <!-- Header content will go here -->
+        <div class = "logo">
+          <a href = "/index.html">
+            <img src = "/images/mgw_logo.png">
+          </a>
+        </div>
+        <!-- Navigation menu -->
+        <div class = "nav">
+          <nav class = "menu">
+            <ul>
+              <li><a href = "about.html"> About </a></li>
+              <li><a href = "https://www.thefrblog.net"> Blog </a></li>
+              <li><a href = "geoscience.html"> Geoscience </a></li>
+              <li><a href = "/pages/podcast.html"> Podcast </a></li>
+              <li><a href = "social.html"> Social </a></li>
+              <li><a href = "store.html"> Store </a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Hamburger menu -->
+        <div class="ham-nav">
+          <button class="hamburger" onclick="show()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+          </button>
+    
+          <nav>
+              <ul>
+                  <li><a>Story</a></li>
+                  <li><a>CV</a></li>
+                  <li><a>Updates</a></li>
+                  <li><a>Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+      <script src="/ham-menu.js"></script>
+      </header>
+  <main>
+    <!-- Main `content will go here -->
+  </main>
+  <footer>
+    <!-- Footer content will go here -->
+  </footer>
+</body>
+</html>

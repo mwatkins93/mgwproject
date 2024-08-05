@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title> My Website </title>
+  <link rel = "stylesheet" type = "text/css" href = "css/styles.css" />
+  <!-- Link to font awesome icons  -->
+  <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Link to icon in the address bar || Likely have to fix later -->
+</head>
+<body>
+  <!-- Header and navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class = "logo">
+        <a href = "index.html">
+          <img class="navlogo" src = "images/mgw_logo.png">
+        </a>
+      </div>
+      <div class = "main-menu">
+        <ul>
+          <li><a href = "https://www.thefrblog.net"> Blog </a></li>
+          <li><a href = "/images/mgw_logo_orig.png"> Geoscience </a></li>
+          <li><a href = "/images/mgw_logo_orig.png"> Podcast </a></li>
+          <li><a href = "/images/mgw_logo_orig.png"> Social </a></li>
+          <li><a href = "/images/mgw_logo_orig.png"> Store </a></li>
+        </ul>
+      </div>
+
+      <!-- Hamburger menu -->
+      <div class="ham-nav">
+        <button class="hamburger" onclick="show()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </button>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href = "https://www.thefrblog.net"> Blog </a></li>
+            <li><a href = "/images/mgw_logo_orig.png"> Geoscience </a></li>
+            <li><a href = "/images/mgw_logo_orig.png"> Podcast </a></li>
+            <li><a href = "/images/mgw_logo_orig.png"> Social </a></li>
+            <li><a href = "/images/mgw_logo_orig.png"> Store </a></li>
+          </ul>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://thefrblog.net/posts/2019-06-18-my-story-life-reflections-at-25/">Story</a></li>
+            <li><a href="cv/CV_24_R.pdf" target="blank">CV</a></li>
+            <li><a>Updates</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+        <script src="js/ham-menu.js"></script>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container-max">
+      <div class="container-sm">
+        <div class="hero-img-container">
+          <img class="hero-pic" src="/images/mgw_desk.jpg">
+        </div>
+        <div class="hero-text-container">
+          <p class="hero-heading text-xl">
+            Geoscientist. Creative. Athlete. Forever Rising.
+          </p>
+          <p class="hero-text">
+            Born and raised in Cloverdale, B.C., Matt Watkins grew up finding a near-perfect balance between outdoor freedom and video games. After a grade increase prevented Watkins from being kicked out of university, he went on to graduate with a B.Sc. in Physical Geography in 2018 and a M.Sc. in Environmental and Life Sciences in 2024. Having enjoyed the flexibility of travel and graduate school, Watkins quickly became dissatisfied with a position in the geoscience private sector and turned to his creative ability to design a life on his own terms – The MGW Project.
+          </p>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!-- Video section -->
+  <section class="video-bg-white">
+    <h2 class="video-content-heading text-xxl">Online</h2>
+    <div class="container">
+
+      <div class="video-content-1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4lWiHLyHsYM" frameborder="0"></iframe>
+        <!-- <a href="#" class="btn btn-video-1">Like and Subscribe</a> -->
+      </div>
+
+      <div class="video-content-2">
+        <iframe width="560" height="315" src="/videos/MWIII_clip1.mp4" frameborder="0"></iframe>
+        <!-- <a href="#" class="btn btn-video-2">Follow</a> -->
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Testimonials section
+  <section class="testimonials bg-black">
+    <div class="container">
+      <h3 class="testimonials-heading text-xl">Insert later</h3>
+      <div class="testimonials-grid">
+        <div class="cards text-med">
+          <p>
+            Insert later....
+          </p>
+          <p>Person A</p>
+        </div>
+        <div class="cards text-med">
+          <p>
+            Insert later....
+          </p>
+          <p>Person B</p>
+        </div>
+        <div class="cards text-med">
+          <p>
+            Insert later....
+          </p>
+          <p>Person C</p>
+        </div>
+      </div>
+  </section>
+-->
+
+  <!-- Footer content will go here -->
+  <footer class = footer bg-black>
+    <div class = "footer-text">
+      <p> 2024 MGW Project | All Rights Reserved
+      </p>
+    </div>
+    <div class = "footer-icons">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/mwatkins93"
+            <i class = "fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/">
+            <i class = "fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/forevarising">
+            <i class = "fab fa-twitch"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_mattw9">
+            <i class = "fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCymk2KZ4djwUX8OIpgbd9Qw"
+            <i class = "fab fa-youtube"></i>
+        </a>
+      </li>
+        <!-- <li></li><i class = "fab fa-github"></i></li> -->
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!-- Test commit - re-establishing connection to GitHub repo -->
