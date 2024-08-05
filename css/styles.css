@@ -171,7 +171,7 @@ img {
     justify-content: space-evenly;
     margin-bottom: 50px;
     align-items: center;
-    border: 10px solid salmon;
+    /* border: 10px solid salmon; */
 }
 
 .video-content-heading {
@@ -184,7 +184,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 10px solid salmon;
+    /* border: 10px solid salmon; */
 }
 
 .video-1 {
@@ -195,7 +195,7 @@ img {
     padding: 10px 0 20px 0;
     display: flex;
     align-items: center;
-    border: 10px solid salmon;
+    /* border: 10px solid salmon; */
 }
 
 .video-2 {
