@@ -54,7 +54,6 @@ img {
 
 .navbar .main-menu ul {
     display: flex;
-
 }
 
 .navbar ul li a {
@@ -70,81 +69,51 @@ img {
 }
 
 /* Hamburger button */
-a,button{
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
     cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
 }
 
-.ham-nav{
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 250px;
-}
-
-.ham-nav{
-    position: fixed;
-    right: -500px;
-    width: 225px;
-    height: 100%;
-    background-color: #000;
-    transition: .5s;
-}
-
-.ham-nav ul li{
-    color: rgb(220, 220, 220);
-    text-align: right;
-    text-transform: uppercase;
-    list-style-type: none;
-    font-size: 1.5em;
-    padding: 10px 20px;
-    border-bottom: 1pt solid #252525;
-}
-
-.hamburger, .bar{
-    position: fixed;
-}
-
-.hamburger{
-    left: 95%;
-    height: 60px;
+.hamburger .hamburger-bar {
     width: 30px;
-    transform: translateY(-50%);
-    border: 0;
-    background: 0 0;
-}
-
-.bar{
-    top: 3px;
-    background: rgb(220, 220, 220);
-    width: 100%;
     height: 2px;
-    transition: all .3s ease-in;
+    background: #fff;
+    margin: 5px 0;
 }
 
-#bar2{
-    top: 11px;
+/* Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    /* box-shadow: 0px 0px 10px rgba(220, 220, 220, 0.2); */
+    transition: right 0.3s ease-in-out;
 }
 
-#bar3{
-    top: 19px;
+.mobile-menu ul {
+    margin-top: 75px;
 }
 
-.ham-nav.active{
-    right: 0;
+.mobile-menu ul li a {
+    color: var(--primary-colour);
+    font-size: 20px;
+    transition: 0.3s;
 }
 
-.hamburger.open #bar1{
-    background-color: #fff;
-    transform: rotate(45deg) translate(6px, 5px);
+.mobile-menu ul li a:hover {
+    color: #fff;
 }
 
-.hamburger.open #bar2{
-    background-color: transparent;
-}
-
-.hamburger.open #bar3{
-    background-color: #fff;
-    transform: rotate(-45deg) translate(6px, -5px);
+.mobile-menu.active {
+    right: -35px;
 }
 
 /* C. Hero section */
@@ -154,11 +123,10 @@ a,button{
 
 .hero .container-max {
     background: url(/images/dark_dunes.jpg) no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
     /* border: 10px solid salmon; */
     padding: 50px 50px;
 }
-
 
 .hero .container-sm {
     display: flex;
@@ -200,10 +168,10 @@ a,button{
 .video-bg-white .container-max {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 50px;
     align-items: center;
-    /* border: 10px solid salmon; */
+    border: 10px solid salmon;
 }
 
 .video-content-heading {
@@ -216,6 +184,7 @@ a,button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 10px solid salmon;
 }
 
 .video-1 {
@@ -226,7 +195,7 @@ a,button{
     padding: 10px 0 20px 0;
     display: flex;
     align-items: center;
-    /* border: 10px solid salmon; */
+    border: 10px solid salmon;
 }
 
 .video-2 {
@@ -393,7 +362,7 @@ a,button{
 
 /* Y. Defined variables */
 :root {
-    --primary-colour: #d1f0ff;
+    --primary-colour: rgb(220, 220, 220);
 }
 
 /* Media queries */
@@ -432,9 +401,81 @@ a,button{
         height: 75px;
         /* border: 10px solid salmon; */
     }
-    .ham-nav {
-        display: none;
+
+    /* Hamburger mobile button */
+    .navbar .hamburger {
+        display: inline-block;
+        position: fixed;
+        left: 90%;
     }
+
+    /*a,button {
+        cursor: pointer;
+    }
+
+    .ham-nav {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 250px;
+    }
+
+    .ham-nav {
+        position: fixed;
+        right: -500px;
+        width: 225px;
+        height: 100%;
+        background-color: #000;
+        transition: .5s;
+    }
+
+    .ham-nav ul li {
+        color: rgb(220, 220, 220);
+        text-align: right;
+        text-transform: uppercase;
+        list-style-type: none;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        border-bottom: 1pt solid #252525;
+    }
+
+    .hamburger .bar {
+        position: fixed;
+    }
+
+    .hamburger {
+        display: flex;
+        left: 95%;
+        height: 60px;
+        width: 30px;
+        transform: translateY(-50%);
+        border: 0;
+        background: 0 0;
+    }
+
+
+    #bar2 {
+        top: 11px;
+    }
+
+    #bar3   {
+        top: 19px;
+    }
+*/
+
+    /*.hamburger.open #bar1{
+        background-color: #fff;
+        transform: rotate(45deg) translate(6px, 5px);
+    }
+
+    .hamburger.open #bar2{
+        background-color: transparent;
+    }
+
+    .hamburger.open #bar3{
+        background-color: #fff;
+        transform: rotate(-45deg) translate(6px, -5px);
+    }*/
 
     /* Hero */
     .hero .container-sm {
@@ -462,7 +503,6 @@ a,button{
     /* Online */
     .video-content-heading {
         text-align: center;
-        margin: 5px;
     }
 
     .video-bg-white .container {
@@ -471,31 +511,41 @@ a,button{
         /* border: 10px solid salmon; */
     }
     .video-content-1 {
-        /* border: 10px solid salmon; */
-        margin: 0;
+        float: none;
+        clear: both;
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+
     }
     .video-content-1 iframe {
-        width: 125%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .video-content-2 {
-        margin: 0;
-    }
-    .video-bg-white iframe {
-        width: 125%;
-    }
+        float: none;
+        clear: both;
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        margin-top: 20px;
+        height: 0;
 
+    }
+    .video-content-2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* @media (max-width: 500px) */
-
-/* Mobile menu */
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 250px;
-    height: 100%;
-    z-index: 100;
-    transition: right 0.3s ease-in-out;
-}
