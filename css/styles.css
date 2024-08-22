@@ -373,6 +373,12 @@ img {
         display: flex;
         flex-direction: column;
     }
+    .video-content-1 {
+        margin: 0;
+    }
+    .video-content-2 {
+        margin: 0;
+    }
 }
 
 @media (max-width: 960px) {
@@ -381,12 +387,6 @@ img {
     }
     .text-xxl {
         font-size: 2.2rem;
-    }
-    .video-content-1 {
-        margin-left: 0px;
-    }
-    .video-content-2 {
-        margin-right: 0;
     }
 }
 
